@@ -1,0 +1,23 @@
+
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+.streamlit/secrets.toml
+.DS_Store
+Thumbs.db
+
+# Local audit and review files
+bhk_audit_report.csv
+duplicate_rows_review.csv
+extreme_price_conflicts_review.csv
+m3m_capital_price_audit.csv
+price_conflicts_after_dedup.csv
+suspicious_bhk_review.csv
+
+# Intermediate files
+gurgaon_bhk_cleaned.csv
+gurgaon_deduplicated.csv
+outputs/

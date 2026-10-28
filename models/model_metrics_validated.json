@@ -1,0 +1,52 @@
+{
+  "dataset": "Dataset B - reduced_df",
+  "features": [
+    "Area",
+    "Status",
+    "Property Type",
+    "Locality",
+    "RERA Approval",
+    "BHK_Count",
+    "Flat Type",
+    "Company Name"
+  ],
+  "target": "Price",
+  "split": "GroupShuffleSplit; 80/20; random_state=101",
+  "cross_validation": "5-fold GroupKFold on training set",
+  "train_rows": 6618,
+  "test_rows": 1637,
+  "best_params": {
+    "regressor__max_depth": null,
+    "regressor__max_features": 0.7,
+    "regressor__min_samples_leaf": 2,
+    "regressor__n_estimators": 200
+  },
+  "training_cv_mae": 10695111.918406561,
+  "holdout_mae": 9061595.304687688,
+  "holdout_rmse": 20622427.92778786,
+  "holdout_r2": 0.831873461125602,
+  "model_sha256": "e0a86d49ca7606de35684fc8be6bea2c9aeeb65ab116f2bf07bec8cefb68e9d0",
+  "r2": 0.831873461125602,
+  "mae": 9061595.304687688,
+  "rmse": 20622427.92778786,
+  "permutation_importance": {
+    "Area": 0.8458244352133862,
+    "Locality": 0.30211523417433106,
+    "Property Type": 0.026337330151465065,
+    "Company Name": 0.01823235723135368,
+    "BHK_Count": 0.011473443042206655,
+    "Flat Type": 0.006996281178045405,
+    "Status": 0.006808752503684223,
+    "RERA Approval": 0.0005981829095778491
+  },
+  "permutation_importance_std": {
+    "Area": 0.009386941428470805,
+    "Status": 0.000503961066652669,
+    "Property Type": 0.0019653683839188914,
+    "Locality": 0.0048188210579050645,
+    "RERA Approval": 0.0004779808198164094,
+    "BHK_Count": 0.0024781162535426836,
+    "Flat Type": 0.00217001510686439,
+    "Company Name": 0.00234370333171325
+  }
+}
